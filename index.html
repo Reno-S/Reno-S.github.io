@@ -7,17 +7,25 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
      <link rel="stylesheet" type="text/css" href="./Jvdb-site/styles.css">
-     <link rel"stylesheet" type ="text/css" href="./index.css">
+     <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body>
 <div class="container text-center">
-    <h1>Select what you want to see:</h1>
-    <br>
-    <br>
-    <h3 class="pointer-mouse black-href site-selection-style" id="header-weather">Weather Page</h3>
-    <br>
-    <br>
-    <h3 class="pointer-mouse black-href site-selection-style" id="header-jb-promx">John van den Berk Pro MX Training</a></h3>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <h1>Select what you want to see:</h1>
+            <br>
+            <br>
+            <div class="site-selection-style align-middle">
+                <h3 class="pointer-mouse black-href " id="header-weather" width=100%>Weather Page</h3>
+            </div>
+            <br/>
+            <br/>
+            <h3 class="pointer-mouse black-href site-selection-style align-middle" id="header-jb-promx">John van den Berk Pro MX Training</a></h3>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
 </div>
 <script>
     $("#header-jb-promx").click(function() {
@@ -26,6 +34,10 @@
     $("#header-weather").click(function() {
         window.location.href="https://reno-s.github.io/weather-app/";
     });
+    $("#header-weather").height($("#header-weather").height() + 10);
+    $("#header-jb-promx").height($("#header-jb-promx").height() + 10);
+
+    
 </script>
 </body>
 </html>
