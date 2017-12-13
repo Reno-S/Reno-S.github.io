@@ -1,0 +1,114 @@
+.top-menu {
+    font-size: 14px;
+    justify-content: space-around;
+}
+
+.menu-item {
+    margin-right: 10px;
+}
+
+.whitespace-menu-image {
+    padding: 20px;
+}
+
+.general-margin {
+    margin: 10px;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.grey-background {
+    background-color: rgb(197, 197, 197);
+}
+
+.standard-row-height {
+    height: 250px;
+}
+
+.right-margin {
+    margin-right: 10px;
+}
+
+.image-stretch {
+    width: 100%;
+    height: 100%;
+}
+
+.card-image-top {
+    max-width: 100%;
+}
+
+.card-deck .card {
+    width:initial;
+}
+
+.darken-hover:hover {
+    opacity: 50%;
+    background-color: rgb(145, 145, 145);
+}
+
+.image-col-width {
+    max-width: 25%;
+}
+
+.rider-card {
+    width: 250px;
+    height: 250px;
+}
+
+.media-card {
+    width: 250px;
+    height: 300px;
+}
+
+.multimedia-img {
+    height: 250px;
+    width: 32%;
+}
+
+.pointer-mouse {
+    cursor: pointer;
+}
+
+.black-href {
+    color: black;
+}
+
+.extra-rider-card {
+    visibility: hidden;
+}
+
+.media-half-row {
+    width: 100%;
+    height: 360px;
+}
+
+.col-centered { 
+    display: inline-block;
+    float: none;
+}
+
+.custom-img-font {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.grey-background {
+    display:inline-block;
+    background-color: rgba(59, 59, 59, 0.61);
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ .height-as-100-pct {
+    height: 100%;
+ }

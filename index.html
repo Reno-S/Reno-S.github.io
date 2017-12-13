@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <!-- Bootstrap CSS-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+     integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="./Jvdb-site/styles.css">
+     <link rel"stylesheet" type ="text/css" href="./index.css">
+</head>
+<body>
+<div class="container text-center">
+    <h1>Select what you want to see:</h1>
+    <br>
+    <br>
+    <h3 class="pointer-mouse black-href site-selection-style" id="header-weather">Weather Page</h3>
+    <br>
+    <br>
+    <h3 class="pointer-mouse black-href site-selection-style" id="header-jb-promx">John van den Berk Pro MX Training</a></h3>
+</div>
+<script>
+    $("#header-jb-promx").click(function() {
+        window.location.href="Jvdb-site/index.html";
+    });
+    $("#header-weather").click(function() {
+        window.location.href="https://reno-s.github.io/weather-app/";
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<div>
+    <script>
+        var baseLocation = window.location.origin;
+        var mainPage = baseLocation + "/index.html";
+        var nlMainPage = baseLocation + "/nl/index.html";
+
+        var baseCurrPage = document.location.href; 
+        var currLastSegment = baseCurrPage.substr(baseCurrPage.lastIndexOf('/') + 1);
+        var idOfCurrPage = "#" + currLastSegment.substr(0, currLastSegment.lastIndexOf('.'));
+        var dutchVersionEquivalent = "";
+
+        if (currLastSegment != "") {
+            dutchVersionEquivalent = '/nl/menu-pages/' + currLastSegment;
+        }
+
+        if (idOfCurrPage != "#") {
+            $(idOfCurrPage).addClass("active");
+        }
+
+        $(document).ready(function(){         
+            $("#jb-logo").click(function(){
+            window.location.href = mainPage;
+            });
+
+            if (currLastSegment == "index.html" || currLastSegment == "") {
+            dutchVersionEquivalent = "/nl/" + currLastSegment;
+            };
+
+            $('#language').attr('href', dutchVersionEquivalent);
+        });
+
+        
+    </script>
+
+    <div class="row">
+        <div class="col-6">
+            <a href="https://twitter.com/JohnvandenBerk"><i class="fa fa-twitter-square fa-2x black-href" aria-hidden="true"></i></a>               
+            <a href="https://www.facebook.com/john.vandenberk.315"><i class="fa fa-facebook-square fa-2x black-href" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/johnvdberk/"><i class="fa fa-instagram fa-2x black-href" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCRqKfg9K_wVUsn2I5dPaENg"><i class="fa fa-youtube-square fa-2x black-href" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-6 right-align">  
+            <div class="pointer-mouse">
+                <a id='language' class='black-href'>Switch To Dutch</a>
+                <i class="fa fa-globe" aria-hidden="true"></i>  
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand">
+                <img id="jb-logo" class="pointer-mouse" src="/pictures/header-logo.png" alt="JB Pro MX Training Logo"></img>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-markup" aria-controls="navbar-markup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-markup">
+                <div class="navbar-nav">
+                    <a id='about-us' class="nav-item nav-link" href="/menu-pages/about-us.html">About Us</a>
+                    <a id='training-spain' class="nav-item nav-link" href="/menu-pages/training-spain.html">Training Spain</a>
+                    <a id='training-holland' class="nav-item nav-link" href="/menu-pages/training-holland.html">Training Holland</a>
+                    <a id='private-lessons' class="nav-item nav-link" href="/menu-pages/private-lessons.html">Private Lessons</a>
+                    <a id='riders' class="nav-item nav-link" href="/menu-pages/riders.html">Riders</a>
+                    <a id='multimedia' class="nav-item nav-link" href="/menu-pages/multimedia.html">Multimedia</a>
+                    <a id='contact' class="nav-item nav-link" href="/menu-pages/contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <hr/>
+</div>
