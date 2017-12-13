@@ -11,7 +11,7 @@
         var engPageEquivalent = "";
 
         if (currLastSegment != "") {
-            engPageEquivalent = "/menu-pages/" + currLastSegment;
+            engPageEquivalent = "Jvdb-site/menu-pages/" + currLastSegment;
         }
 
         if (idOfCurrPage != "#") {
@@ -19,7 +19,7 @@
         }
 
         if (currLastSegment == "index.html") {
-            engPageEquivalent = "/" + currLastSegment;
+            engPageEquivalent = "/Jvdb-site/" + currLastSegment;
         }
 
         $(document).ready(function(){
@@ -28,7 +28,7 @@
             });
 
             if (currLastSegment == "index.html" || currLastSegment == "") {
-                engPageEquivalent = "/"
+                engPageEquivalent = "/Jvdb-site/index.html"
             }
             
             $('#language').attr('href', engPageEquivalent);
